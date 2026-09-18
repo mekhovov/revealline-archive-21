@@ -1,0 +1,59 @@
+{
+  "status": "CACHE_CANDIDATE_NOT_CREATED_OR_DEPLOYED",
+  "repository": "mekhovov/revealline-archive-21",
+  "sourceRepository": "mekhovov/revealline",
+  "releaseId": 391120699,
+  "releasePublishedAt": "2026-09-17T23:49:33Z",
+  "sourceRevision": "a36d62f2fc3af67e3fffcafda3656c413ca77341",
+  "sourceTree": "eaa76580e442311e87e6761a7d442f38f8f06652",
+  "tagObject": "5f7aa8f8e557a643ffda625145b7f72203ee3c24",
+  "originalDistribution": {
+    "name": "distribution.zip",
+    "bytes": 313257870,
+    "sha256": "a0fe60ca036619240ccaf266efd9f2e41526d9c2f3b4b9529b8662b80ad59365",
+    "releaseAssetId": 571380745,
+    "url": "https://github.com/mekhovov/revealline/releases/download/v0.60.7/distribution.zip"
+  },
+  "originalMetadata": [
+    {
+      "name": "release.json",
+      "bytes": 465,
+      "sha256": "eeaf525f7b95cbc9d0044aeff702bf3ee365b3632bcb68ead88be8d41089bf15",
+      "releaseAssetId": 571375230,
+      "url": "https://github.com/mekhovov/revealline/releases/download/v0.60.7/release.json"
+    },
+    {
+      "name": "manifest.json",
+      "bytes": 127378,
+      "sha256": "e0ede398594f9e5907e015abcec766800fcd3c89433a6ea9e19e2c220799fc3a",
+      "releaseAssetId": 571375228,
+      "url": "https://github.com/mekhovov/revealline/releases/download/v0.60.7/manifest.json"
+    },
+    {
+      "name": "distribution.zip.sha256",
+      "bytes": 83,
+      "sha256": "63358cccc929235d0b843a636b8ab8bd9d84ce2a495bfc837149a6a92adda052",
+      "releaseAssetId": 571375227,
+      "url": "https://github.com/mekhovov/revealline/releases/download/v0.60.7/distribution.zip.sha256"
+    },
+    {
+      "name": "source-qualification.json",
+      "bytes": 73661,
+      "sha256": "f36b74728778dd014c5e814c9abcf55c1a37f5808241ea0a8c767a35c27c8c61",
+      "releaseAssetId": 571375229,
+      "url": "https://github.com/mekhovov/revealline/releases/download/v0.60.7/source-qualification.json"
+    }
+  ],
+  "templateRepository": "mekhovov/revealline-archive-20",
+  "templateAcceptedMerge": "cf4250adef67860df06ec9093c3a885d071f2da8",
+  "templateTree": "4b0d67449a4be5f59a6e6c3ddf6ec2b7959556af",
+  "publisherAuthorityCutoff": "00a043d08c235422e9dbebef82dc5e0837da6667",
+  "currentSourceMerge": "5e8638c5e5f2659d5152fa59ace8581b37c4bc2a",
+  "controllerPathsUnchangedAtCurrentMerge": true,
+  "explorerSha256": "a67eebc2c45e1659fef5b993c65fee2146ae3e47f352f25b0c9d42ccc77471c0",
+  "payloadSource": "Exact published original ZIP; hosted extraction only, no rebuild or local payload copy",
+  "actualSeedCommit": null,
+  "actualArchiveCommit": null,
+  "actualDeploymentId": null,
+  "publicAcceptance": null
+}
