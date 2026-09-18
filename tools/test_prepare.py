@@ -233,16 +233,27 @@ class CohortTests(unittest.TestCase):
 class CommittedMetadataTests(unittest.TestCase):
     def test_exact_original_metadata_and_source_qualification(self):
         lock, inventory = locked_inputs(ROOT)
-        self.assertEqual((lock['expectedFiles'], lock['expectedBytes']), (698, 313213410))
-        self.assertEqual([r['version'] for r in lock['releases']], ['v0.60.7'])
+        self.assertEqual((lock['expectedFiles'], lock['expectedBytes']), (1393, 626433016))
+        self.assertEqual([r['version'] for r in lock['releases']], ['v0.60.7', 'v0.60.8'])
         release = lock['releases'][0]
         self.assertEqual(release['tagObject'], '5f7aa8f8e557a643ffda625145b7f72203ee3c24')
         self.assertEqual(release['sourceRevision'], 'a36d62f2fc3af67e3fffcafda3656c413ca77341')
         self.assertEqual(release['sourceTree'], 'eaa76580e442311e87e6761a7d442f38f8f06652')
         self.assertEqual(release['sourceQualification'], {'sha256': 'f36b74728778dd014c5e814c9abcf55c1a37f5808241ea0a8c767a35c27c8c61', 'bytes': 73661})
         rows = [row for row in inventory['files'] if row['path'].endswith('/source-qualification.json')]
-        self.assertEqual(len(rows), 1)
+        self.assertEqual(len(rows), 2)
         self.assertEqual(rows[0]['bytes'], 73661)
+        release = lock['releases'][1]
+        self.assertEqual(release['tagObject'], '9a915a210fe3a86cfa644fa33c53cbfeb1a7c123')
+        self.assertEqual(release['sourceRevision'], 'a7fd646e40bd93268f56b714fdc5d8aa9b0b1f67')
+        self.assertEqual(release['sourceTree'], 'fffcf886b4f1a0000fbfd062a931bbe1cb0fef64')
+        self.assertEqual(release['sourceQualification'], {'sha256': '30f08c1c0431ff9411b8a55c4b175efc545eb970577737cae39cf293a4aa5269', 'bytes': 76510})
+        self.assertEqual(rows[1]['bytes'], 76510)
+        for version, expected_bytes in [('v0.60.7', 313212014), ('v0.60.8', 313219529)]:
+            with self.subTest(version=version):
+                cohort = [row for row in inventory['files'] if row['path'].startswith('releases/' + version + '/')]
+                self.assertEqual(len(cohort), 695)
+                self.assertEqual(sum(row['bytes'] for row in cohort), expected_bytes)
 
     def test_changed_or_wrong_identity_qualification_refuses(self):
         import shutil
