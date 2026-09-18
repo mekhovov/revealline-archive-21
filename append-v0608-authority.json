@@ -1,0 +1,89 @@
+{
+  "format": "revealline-archive-append-authority.v1",
+  "status": "METADATA_ONLY_PROPOSAL_NOT_DEPLOYED",
+  "archiveRepository": "mekhovov/revealline-archive-21",
+  "baseCommit": "2bba1447f2810ec4107eb8b8ddcdf9008c475ad2",
+  "baseTree": "33a7c73d181926ce5fa55a3cdfce004c99392148",
+  "preservedRelease": "v0.60.7",
+  "addedRelease": "v0.60.8",
+  "releaseId": 391137536,
+  "publishedAt": "2026-09-18T01:30:31Z",
+  "sourceRevision": "a7fd646e40bd93268f56b714fdc5d8aa9b0b1f67",
+  "sourceTree": "fffcf886b4f1a0000fbfd062a931bbe1cb0fef64",
+  "tagObject": "9a915a210fe3a86cfa644fa33c53cbfeb1a7c123",
+  "distributionAsset": {
+    "id": 571458671,
+    "name": "distribution.zip",
+    "size": 313262536,
+    "digest": "sha256:0c5bd0b6991b050bc4fc94399f0fcb40dd6a8631414a6b51ae265d3023330c30"
+  },
+  "originalMetadata": [
+    {
+      "name": "release.json",
+      "assetId": 571453108,
+      "bytes": 465,
+      "sha256": "5af6f759e8d7f7c367d3c879986f2e3fdfa4ca514d539a4858df401c149c095d"
+    },
+    {
+      "name": "manifest.json",
+      "assetId": 571453104,
+      "bytes": 127378,
+      "sha256": "ebfcb704957fbec048afceeb8c94722b6a20cd7bce3890378b3523507fbd240c"
+    },
+    {
+      "name": "distribution.zip.sha256",
+      "assetId": 571453106,
+      "bytes": 83,
+      "sha256": "1ca78abc763f4c6d46d621b84cb1c19286635bf85d84d232a78080f92346c571"
+    },
+    {
+      "name": "source-qualification.json",
+      "assetId": 571453111,
+      "bytes": 76510,
+      "sha256": "30f08c1c0431ff9411b8a55c4b175efc545eb970577737cae39cf293a4aa5269"
+    }
+  ],
+  "expectedInventory": {
+    "bytes": 286989,
+    "sha256": "e36410ebed9f4ecb5dcbf1acc66d6d0ae7eaaeab638534e6823603ab9cf980c5"
+  },
+  "capacity": {
+    "files": 1393,
+    "bytes": 626433016,
+    "budgetBytes": 800000000,
+    "remainingBytes": 173566984
+  },
+  "preservation": {
+    "existingFiles": 698,
+    "oldCanonicalVersionFiles": 695,
+    "oldCanonicalVersionFilesAllExact": true,
+    "unchangedExistingRows": 697,
+    "changedExistingRows": [
+      {
+        "old": {
+          "path": "index.html",
+          "bytes": 825,
+          "sha256": "26bd547e0099dce8d818220fc2d6a0187411d0c77d65a8addeafda239d44410d"
+        },
+        "new": {
+          "path": "index.html",
+          "bytes": 902,
+          "sha256": "d4ecb011757d6f4b78b42e75dd78948f9bef523606d7ff0253e793699f89a212"
+        }
+      }
+    ],
+    "added608Rows": 695,
+    "removedRows": 0,
+    "duplicateCanonicalPaths": 0,
+    "caseFoldCollisions": 0,
+    "fileDirectoryCollisions": 0
+  },
+  "historicalAuthority": "input-authority.json is retained byte-identically as the initial v0.60.7 preparation record; its historical candidate status is not the status of this append.",
+  "scope": {
+    "metadataBodiesVerified": true,
+    "distributionDownloaded": false,
+    "artifactAssembled": false,
+    "publicAcceptance": false
+  },
+  "nextGate": "Review exact append commit, merge normal PR, one hosted main-push deployment, verify original extraction and all public bytes plus retention play before publisher admission."
+}
